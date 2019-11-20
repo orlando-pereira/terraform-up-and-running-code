@@ -15,7 +15,7 @@ terraform {
     # manually, uncomment and fill in the config below.
 
     bucket         = "orlando-state"
-    key            = "/prod/data-stores/mysql/terraform.tfstate"
+    key            = "prod/data-stores/mysql/terraform.tfstate"
     region         = "us-east-2"
     dynamodb_table = "orlando-locks"
     encrypt        = true
