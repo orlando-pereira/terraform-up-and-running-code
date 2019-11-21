@@ -15,11 +15,11 @@ terraform {
     # This backend configuration is filled in automatically at test time by Terratest. If you wish to run this example
     # manually, uncomment and fill in the config below.
 
-    # bucket         = "<YOUR S3 BUCKET>"
-    # key            = "<SOME PATH>/terraform.tfstate"
-    # region         = "us-east-2"
-    # dynamodb_table = "<YOUR DYNAMODB TABLE>"
-    # encrypt        = true
+    bucket         = "orlando-state"
+    key            = "state-data-stores/mysql/terraform.tfstate"
+    region         = "us-east-2"
+    dynamodb_table = "orlando-locks"
+    encrypt        = true
 
   }
 }
